@@ -1,0 +1,27 @@
+###
+POST http://localhost:10000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Camilo Sanchez",
+    "age": "20",
+    "email": "c.sanchez@email.com"
+}
+###
+GET http://localhost:10000/api/users HTTP/1.1
+
+###
+GET http://localhost:10000/api/users/64b87200975b910ede854780 HTTP/1.1
+
+###
+PUT http://localhost:10000/api/users/64b8725b24aa8072db00b316 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Camilo Ruiz",
+    "age": "36",
+    "email": "c.ruiz@email.com"
+}
+
+###
+DELETE  http://localhost:10000/api/users/64b87200975b910ede854780 HTTP/1.1
